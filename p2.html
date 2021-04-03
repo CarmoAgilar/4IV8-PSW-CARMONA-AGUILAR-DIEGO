@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Merriweather:ital@1&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="js/problemas.js"></script>
+</head>
+<body>
+<div class="contenedora">
+    <h1>Problema 2</h1>
+    <br>
+</div>
+<hr>
+    <form method="post" name="formulario">
+        <table id="tabla">
+            <tr>
+                <td >
+                    Escriba su sueldo base:
+                </td>
+
+                <td >
+                    <input type="text" name="sueldo" onkeypress="return validarn(event)"> $
+                </td>
+            </tr>
+   
+            <tr>
+                <td >
+                    Escriba sus ventas: 
+                </td>
+
+                <td >
+                    <input type="text" name="ventas" onkeypress="return validarn(event)"> $
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="comision" name="enviar" onclick="comision()"> 
+                </td>
+            </tr>
+
+            <tr>
+                <td >
+                    Su total de comisiones:
+                <td>
+                    <input type="text" name="comisionn" id="cantidad" readonly="readonly" class="input_text"> $
+                </td>
+            </tr>
+
+            <tr>
+                <td >
+                    Su paga total: 
+                </td>
+                <td>
+                    <input type="text" name="sueldoti" id="cantidadi" readonly="readonly" class="input_text"> $
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="reset" name="Borrar" onclick="borrar2()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <table>
+
+    </form>
+
+    <hr>
+    <div class="contenedor">
+            <h2><a href="index.html">Regresar al menu</a></h2>
+    </div>
+    <hr>
+<div class="contenedorb">
+
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Merriweather:ital@1&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="js/problemas.js"></script>
+</head>
+<body>
+    <div class="contenedora">
+        <h1>Problema 4</h1>
+        <br>
+    </div>
+<hr>
+ 
+    <form method="post" name="formulario">
+        <table id="tabla">
+            <tr>
+                <td>
+                    Escriba la calificación del primer examen:
+                </td>
+                <td >
+                    <input type="text" name="examen_1" onkeypress="return validarn(event)">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    Escriba la calificación del segundo examen:
+                </td>
+                <td >
+                    <input type="text" name="examen_2" onkeypress="return validarn(event)">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    Escriba la calificación del tercer examen:
+                </td>
+                <td >
+                    <input type="text" name="examen_3" onkeypress="return validarn(event)">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    Escriba la calificación del examen final:
+                </td>
+                <td >
+                    <input type="text" name="examen_final" onkeypress="return validarn(event)">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    Escriba la calificación del trabajo final:
+                </td>
+                <td >
+                    <input type="text" name="trabajo_final" onkeypress="return validarn(event)">
+                </td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td >
+                    <input type="button" value="Calcular promedio" name="enviar" onclick="calificacion()">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    Promedio final:
+                <td >
+                    <input type="text" name="promedio_final" id="cantidad" readonly="readonly" class="input_text">
+                </td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td >
+                    <input type="button" value="reset" name="Borrar" onclick="borrar4()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr>
+    <div class="contenedor">
+            <h2><a href="index.html">Regresar al menu</a></h2>
+    </div>
+    <hr>
+<div class="contenedorb">
+
+</div>
+   
+</body>
+</html>
