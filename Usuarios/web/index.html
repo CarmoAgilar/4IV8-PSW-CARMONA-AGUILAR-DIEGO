@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CRUD usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Merriweather:ital@1&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <script src="./JS/validacion.js"></script>
+    </head>
+    <body>
+        <div class="contenedora">
+            <h1>CRUD de Usuarios Usando Bases de Datos</h1>
+            </div>
+            <form name="formulario" method="get" action="Registro" onsubmit="return validarRegistro(this)">
+
+                    <hr>
+                    <div class="input-box">
+                      <span class="details">Nombre(s)</span>
+                      <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="input-box">
+                      <span class="details">Apellido Paterno</span>
+                      <input type="text" name="appat" placeholder="Ingrese su apellido paterno" required>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="input-box">
+                      <span class="details">Apellido Materno</span>
+                      <input type="text" name="apmat" placeholder="Ingrese su apellido materno" required>
+                    </div>
+                    <br>
+                    <div class="input-box">
+                      <span class="details">Correo</span>
+                      <input type="email" name="correo" placeholder="Ingrese su correo" required>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="input-box">
+                      <span class="details">Edad</span>
+                      <input type="number" name="edad" placeholder="Ingrese su edad" required onkeypress="return validarn(event)">
+                    </div>
+                    
+                <div class="button">
+                    <input type="submit" value="Registrar">
+                </div>
+                <div class="button">
+                    <input type="reset" value="Eliminar Datos">
+                </div>
+                    
+                    <hr>
+                    
+            </form>
+            </div>
+            
+            <div class="containerConsulta">
+          
+                <form method="get" name="consultarregistro" action="Consultar">
+                    <div class="button">
+                    <input type="submit" value="Consultar Datos">
+                    </div>
+                    
+                    <hr>
+                    
+                </form>
+            </div>
+            
+            <div class="containerEliminar">
+                <div class="title">Ingrese el ID del usuario que desea eliminar</div>
+                <form method="post" name="formularioeliminar" action="Eliminar" onsubmit="return validarIDE(this)"><br>
+                    <div>
+                    <div class="input-box">
+                      <span class="details">ID)</span>
+                      <input type="number" name="ideliminar" placeholder="Ingrese el id" required onkeypress="return validarn(event)">
+                    </div>
+                    </div>
+                    <div class="button">
+                    <input type="submit" value="Eliminar Usuario">
+                    </div>
+                    <hr>
+                </form>
+            </div>
+            
+            <div class="containerActualizar">
+                <div class="title">Ingrese el ID del usuario a actualizar sus datos</div>
+                <form method="post" name="formularioactualizar" action="Actualizar" onsubmit="return validarIDA(this)"><br>
+                    <div class="user-details">
+                    <div class="input-box">
+                      <span class="details">ID)</span>
+                      <input type="number" name="idactualizar" placeholder="Ingrese el id" required onkeypress="return validarn(event)">
+                    </div>
+                    </div>
+                    <div class="button">
+                    <input type="submit" value="Actualizar Datos">
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class = "contenedorb">
+                
+            </div>
+    </body>
+</html>
